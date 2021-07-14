@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>返回的json数据展示</title>
+    <script src="../js/need/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<button>点击获取数据</button>
+<script>
+        var button = $("button");
+        button.click(function () {
+            $.get({
+                url: "/yq_json"
+            },function (data,f) {
+                //data为全国数据，f为请求是否成功，成功返回success
+                //获取全国数据
+                var all_country = data['country'];//获取第一个对象
+                //获取更新时间
+                var all_time = all_country['time'];
+                console.log("更新时间: "+all_time);
+                //获取总确诊人数
+                var totalConfirmed = all_country['totalConfirmed'];
+                console.log("总确诊人数: "+totalConfirmed);
+
+                //获取总治愈人数
+                var totalCured = all_country['totalCured'];
+                console.log("总治愈人数: "+totalCured);
+
+                //获取总死亡人数人数
+                var totalDeath = all_country['totalDeath'];
+                console.log("总治愈人数: "+totalDeath);
+
+                console.log("============每个省份信息=============");
+                // console.log(data['provinceArray'].length)
+                for (var i = 0; i < data['provinceArray'].length; i++) {
+                // for (var i = 0; i < 1; i++) {
+                    // console.log(data['provinceArray'])
+                    //data['provinceArray']是一个省份数组
+                    //获取省份
+                    var childStatistic = data['provinceArray'][i]['childStatistic'];//这个省份的名字
+                    console.log("省份: "+childStatistic);
+
+                    //获取每个省份的城市信息，返回的也是一个数组
+                    console.log("------"+childStatistic+"城市信息--------");
+                    var cityArray = data['provinceArray'][i]['cityArray'];
+                    // console.log(cityArray)
+                    var test_city = " ";
+                    for (var j = 0; j < cityArray.length; j++) {
+                    // for (var j = 0; j < 1; j++) {
+                        //循环遍历每个省份的感染信息
+                        /*childStatistic: "武汉"
+                        totalConfirmed: 50340
+                        totalCured: 46471
+                        totalDeath: 3869
+                        totalDoubtful: 0
+                        totalIncrease: 0*/
+                        //获取城市名
+                        var city_childStatistic= cityArray[j]['childStatistic'];
+                        console.log("城市: "+city_childStatistic)
+                        //获取总确诊人数
+                        var city_totalConfirmed = cityArray[j]['totalConfirmed'];
+                        console.log("确诊: "+city_totalConfirmed)
+                        // test_city = test_city+","+city_totalConfirmed;
+                        //获取总治愈人数
+                        var city_totalCured = cityArray[j]['totalCured'];
+                        console.log("治愈: "+city_totalCured)
+
+                        //湖区总死亡人数
+                        var city_totalDeath = cityArray[j]['totalDeath'];
+                        console.log("死亡: "+city_totalDeath)
+                        console.log("------- "+city_childStatistic+"信息遍历完成-------")
+                    }
+                    console.log(test_city)
+                    console.log("-------省份 "+childStatistic+"信息遍历完成-------")
+                }
+            })
+        })
+</script>
+</body>
+</html>

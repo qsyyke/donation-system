@@ -1,0 +1,64 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+input {
+  box-shadow: 0 0 0px 1000px white inset !important;
+}
+body {
+  background-color: rgba(216, 226, 220, 0.75);
+  width: 90%;
+  height: 100%;
+}
+.nav {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  width: 9.5rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 55px 33px 55px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.myheader {
+  background-color: rgba(216, 226, 220, 0);
+  position: relative;
+  left: 0px;
+  width: 100%;
+}
+.myheader #s {
+  background-color: white;
+}
+.mainbox .query div input {
+  padding-bottom: 3px;
+  position: relative;
+  left: -5px;
+  margin: 35px auto;
+  font-family: Poppins-Regular;
+  font-size: 21px;
+  color: #555555;
+  line-height: 1.2;
+  display: block;
+  width: 80%;
+  height: 35px;
+  background: transparent;
+  box-shadow: 0 0 0px 100px white inset;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  text-align: center;
+  border-bottom: 1.5px solid #555555;
+}
+.mainbox .query .myself {
+  width: 50%;
+}

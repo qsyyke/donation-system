@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>捐赠-幸得有你 山河无恙</title>
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/need/flexible.js"></script>
+    <script src="./js/data/verifycookieqt.js"></script>
+</head>
+<body>
+    <header>
+        <h1>捐款</h1>
+        <ul>
+            <li>
+                <span class="top_border head_donate"><a href="./index.html">首页</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a href="message.html">留言</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a href="./pershow.html">个人展示</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a href="./query.html">查询</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a target="_blank" href="./heroshow.html">抗疫故事</a></span>
+            </li>
+        </ul>
+    </header>
+
+    <div class="nav">
+        <div class="header">
+            <h2>爱传递</h2>
+        </div>
+        <section class="mainbox">
+             <form action="http://api.vipblogs.cn/donatepay" method="post">
+
+                <div class="yzm_div ">
+                    <span>邮&nbsp;&nbsp;&nbsp;箱</span><input class="email" name="email" type="email">
+                </div>
+                 <div class="userdiv" style="display: none;">
+                    <span>用户名</span><input maxlength="10" class="username_input" name="username" type="text">
+                </div>
+                <div class="userprovince" >
+                     <span class="sf1">省&nbsp;&nbsp;&nbsp;份</span>
+                    <div class="distpicker1 distpicker"data-toggle="distpicker" >
+                        <select class="uprovince" name="userProvince" data-province="省"></select>
+                        <select class="ucity" name="userCity" data-city="市"></select>
+                        <select class="acrea" name="userArea" data-district="区"></select>
+                    </div>
+                </div>
+               <div class="donateprovince">
+                   <span class="sf2">捐赠到</span>
+                    <div class="distpicker2 distpicker" data-toggle="distpicker">
+                        <select name="donateProvince" data-province="省"></select>
+                        <select name="donateCity" data-city="市"></select>
+                        <select name="donateArea" data-district="区"></select>
+                    </div>
+               </div>
+                
+                <div class="wz">
+                    <div class="money">
+                        <input class="money_input" step="0.01" placeholder="捐款金额" min="0.01" max="999999999" name="totalAmount" type="number">
+                    </div>
+                    <div class="goods">
+                        <span class="wz_span">希望用于</span>
+                        <select name="wishgoods" id="">
+                            <option value="现金">现金</option>
+                            <option value="防护服">防护服</option>
+                            <option value="医用口罩">医用口罩</option>
+                            <option value="护目镜">护目镜</option>
+                            <option value="隔离衣">隔离衣</option>
+                            <option value="喷雾器">喷雾器</option>
+                            <option value="红外线体温仪">红外线体温仪</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="yzm">
+                    <span>验证码</span><input name="mail" maxlength="4" class="write_yzm" type="text">
+                </div>
+                <div class="send_yzm">发送验证码</div>
+                <div>
+                    <textarea maxlength="40" placeholder="留下祝福语吧`(〜￣△￣)〜` " name="message" style="resize: none;" id="" cols="30" rows="10"></textarea>
+                </div> 
+                <button type="submit" id="but_sub" class="button button-3d button-primary button-rounded myself" >提&nbsp;&nbsp;&nbsp;交</button>
+             </form>
+        </section>
+    </div>
+    <script src="./js/need/jquery-3.5.1.min.js"></script>
+    <script src="./js/need/distpicker.js"></script>
+    <script src="js/data/donate.js"></script>
+</body>
+</html>

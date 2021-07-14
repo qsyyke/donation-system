@@ -1,0 +1,54 @@
+header {
+  z-index: 99;
+  display: inline-block;
+  height: 1.25rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 100% 100%;
+  margin: 0px auto;
+  position: relative;
+  /* display: flex; */
+}
+header h1 {
+  /* width: 50%; */
+  display: inline-block;
+  /* flex: 1; */
+  text-align: left;
+  position: relative;
+  color: #fff;
+  /* left: 30%; */
+  margin-left: 5%;
+  font-size: 0.475rem;
+  line-height: 1rem;
+}
+header ul {
+  text-align: center;
+  width: 80%;
+  height: .625rem;
+  margin: -0.625rem auto;
+}
+header ul li {
+  float: left;
+  margin-left: 2rem;
+  position: relative;
+  top: 0px;
+  right: -10%;
+}
+header ul li .head_donate {
+  position: relative;
+  display: inline-block;
+  right: 0px;
+  top: 0px;
+}
+header ul li span {
+  /* width: .875rem; */
+  width: 100%;
+  height: .325rem;
+  /* line-height: px; */
+  text-align: center;
+  border: none;
+  font-size: 17px;
+}
+header ul li span a {
+  color: #1b9af7;
+}

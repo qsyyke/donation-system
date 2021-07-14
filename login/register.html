@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<div class="nav">
+    <div class="header">
+        <h2>注册</h2>
+    </div>
+    <section class="mainbox">
+        <form action="" method="post">
+            <div>
+                <span>用户名</span><input maxlength="12" name="username" type="text">
+                <div class="is_right"></div>
+            </div>
+
+            
+            <div class="pwd_div">
+                <span>密&nbsp;&nbsp;&nbsp;码</span><input maxlength="16" name="pwd"  type="password">
+                <p class="is_right is_right_mm"></p>
+                <div class="yj_pwd"></div>
+            </div>
+            <div class="yzm_div ">
+                <span>邮&nbsp;&nbsp;&nbsp;箱</span><input maxlength="23" class="email" name="mail" type="email">
+                <p class="is_right"></p>
+            </div>
+            <div class="yzm">
+                <span>验证码</span><input name="mail" maxlength="4" class="write_yzm" type="text">
+                <p class="is_right is_right_yzm"></p>
+            </div>
+            <div class="send_yzm">发送验证码
+                <p class="send_right"></p>
+            </div>
+            <div class="register_a">
+                <ul>
+                    <li><a href="login.html">点击登录</a></li>
+                </ul>
+            </div>
+            <div class="but_sub" type="submit">注&nbsp;&nbsp;&nbsp;册</div><br>
+        </form>
+    </section>
+</div>
+<script src="../js/need/jquery-3.5.1.min.js"></script>
+<script src="../js/data/login&register.js"></script>
+</body>
+</html>

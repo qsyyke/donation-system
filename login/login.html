@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<div class="nav">
+    <div class="header">
+        <h2>登录</h2>
+    </div>
+    <section class="mainbox">
+        <!-- <form action="" method="post"> -->
+            <div style="display: none;" class="yx">
+                <span>用户名</span><input maxlength="12" class="username" value="长度不得小于3" name="username" type="text">
+            </div>
+
+            <div class="pwd_div mm_div">
+                <span>密&nbsp;&nbsp;&nbsp;码</span><input class="mm" maxlength="16" name="password"  type="password">
+                <p class="is_right is_right_mm"></p>
+            </div>
+            <div class="yzm_div">
+                <span>邮&nbsp;&nbsp;&nbsp;箱</span><input maxlength="23" value="请输入邮箱" class="email" name="email" type="email">
+            </div>
+            <div class="yzm">
+                <span>验证码</span><input name="verCode" maxlength="4" class="write_yzm" type="text">
+            </div>
+            <div class="send_yzm">发送验证码</div>
+            <div class="register_a">
+                <ul>
+                    <li class="but_register" id="id_but"><a class="but_a" href="javascript:;">点击注册</a></li>
+                    <li class="but_log_f" style="display: none;"><a href="javascript:;">点击登录</a></li>
+                    <li class="forget"><a href="javascript:;">忘记密码</a></li>
+                </ul>
+            </div>
+            <button id="but_sub" class="button button-3d button-primary button-rounded" type="submit">登&nbsp;&nbsp;&nbsp;录</button><br>
+           
+        <!-- </form> -->
+    </section>
+</div>
+<script src="../js/need/jquery-3.5.1.min.js"></script>
+<script src="../js/data/login&register.js"></script>
+</body>
+</html>

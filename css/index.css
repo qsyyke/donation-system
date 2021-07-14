@@ -1,0 +1,391 @@
+/* 声明字体*/
+@font-face {
+  font-family: electronicFont;
+  src: url(../fonts/DS-DIGIT.TTF);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #3d5a80;
+}
+body {
+  background-image: url(../image/system/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  line-height: 1.15;
+  height: 100%;
+  overflow: hidden;
+}
+header {
+  height: 1.25rem;
+  background-image: url(../image/system/head_bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 100%;
+  position: relative;
+}
+header h1 {
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-size: 0.475rem;
+  line-height: 1rem;
+}
+header .showTime {
+  position: absolute;
+  left: 0.375rem;
+  top: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0.9375rem;
+  font-size: 0.25rem;
+}
+header .login_a {
+  position: absolute;
+  right: 0.325rem;
+  top: 0.075rem;
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-image: url(../image/system/topavatar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+  text-decoration: none;
+}
+header .userShow {
+  position: absolute;
+  display: inline-block;
+  right: 0.125rem;
+  top: 8px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: #e3e7f1;
+}
+header ul {
+  display: flex;
+  width: 40%;
+  height: .625rem;
+  position: absolute;
+  right: 0%;
+  top: .1875rem;
+}
+header ul li {
+  flex: 1;
+  float: left;
+  height: .625rem;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+header ul li span {
+  line-height: .625rem;
+}
+header ul li span a {
+  /* color: #1b9af7; */
+  color: rgba(255, 255, 255, 0.7);
+}
+header ul li span a:hover {
+  /* color: #1b9af7; */
+  color: #1b9af7;
+}
+.mainbox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  padding: 0.125rem 0.125rem 0 0.125rem;
+}
+.mainbox .column {
+  flex: 2;
+}
+.mainbox .column:nth-child(2) {
+  flex: 4;
+  overflow: hidden;
+}
+.china_title {
+  height: 1.7rem;
+  position: relative;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background-image: url(../image/line\(1\).png) rgba(255, 255, 255, 0.03);
+  padding: 0 0.1875rem 0.5rem 0.1875rem;
+  margin-bottom: 0.7rem;
+}
+.china_title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+.china_title::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+.china_title .panel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.china_title .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+.china_title .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+.china_title ul {
+  display: flex;
+}
+.china_title ul .text_decr_left {
+  position: relative;
+  left: 4%;
+  top: -0.205rem;
+  flex: 2;
+  line-height: 1.25rem;
+  font-size: 20px;
+  color: #ffeb7b;
+  padding: 0.05rem 0;
+  font-family: "electronicFont";
+  font-weight: bold;
+}
+.china_title ul .text_decr_left span {
+  position: absolute;
+  left: 1.25px;
+  font-size: 18px;
+}
+.china_title ul .text_decr_left p {
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 38px;
+}
+.china_title ul .text_decr_left .totalMoney {
+  position: relative;
+  left: -0.28rem;
+  top: 0.7rem;
+  font-size: 0.58rem;
+}
+.china_title ul .text_decr_left .totalPeople {
+  position: relative;
+  left: 0.67rem;
+  top: 0.7rem;
+  font-size: 0.58rem;
+}
+.china_title ul .text_decr_left .span_text_left {
+  position: relative;
+  font-size: 18px;
+  top: -0.14rem;
+}
+.china_title ul .text_decr_right {
+  position: relative;
+  left: 4%;
+  top: -0.205rem;
+  flex: 2;
+  line-height: 1.25rem;
+  font-size: 20px;
+  color: #ffeb7b;
+  padding: 0.05rem 0;
+  font-family: "electronicFont";
+  font-weight: bold;
+}
+.china_title ul .text_decr_right span {
+  position: absolute;
+  left: 1.25px;
+  font-size: 18px;
+}
+.china_title ul .text_decr_right p {
+  display: inline-block;
+  position: absolute;
+  font-size: 0.58rem;
+  left: 0px;
+  top: 38px;
+}
+.panel {
+  position: relative;
+  height: 55%;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background-image: url(../image/line\(1\).png) rgba(255, 255, 255, 0.03);
+  padding: 0 0.1875rem 0.5rem 0.1875rem;
+  padding-bottom: -0.25rem;
+}
+.panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+.panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+.panel .panel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.panel .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+.panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+}
+.panel h2 {
+  height: 0.6rem;
+  color: #fff;
+  font-size: 0.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+.panel .chart {
+  height: 100%;
+}
+.column:nth-child(2) {
+  margin: 0 -5px 10px;
+  position: relative;
+  top: 1.3rem;
+  height: 13.25rem;
+}
+.map {
+  position: relative;
+  /*地图*/
+}
+.map .t7 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10.125rem;
+  z-index: 9;
+}
+.map .map1 {
+  position: absolute;
+  top: 3.6625rem;
+  left: 50%;
+  width: 6.475rem;
+  height: 6.475rem;
+  transform: translate(-50%, -50%);
+  background-image: url(../image/system/map.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -99;
+  animation: rotate_yuan 20s linear infinite;
+}
+@keyframes rotate_yuan {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.map .map2 {
+  position: absolute;
+  top: 3.6625rem;
+  left: 50%;
+  width: 8.0375rem;
+  height: 8.0375rem;
+  transform: translate(-50%, -50%);
+  background-image: url(../image/system/lbx.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -85;
+  animation: rotate1 10s linear infinite;
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.map .map3 {
+  position: absolute;
+  top: 3.6625rem;
+  left: 50%;
+  width: 8.0375rem;
+  height: 8.0375rem;
+  transform: translate(-50%, -50%);
+  background-image: url(../image/system/jt.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -80;
+  animation: rotate2 4s linear infinite;
+}
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
+  }
+}

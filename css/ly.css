@@ -1,0 +1,252 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?2b2jiv');
+  src: url('../fonts/icomoon.eot?2b2jiv#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?2b2jiv') format('truetype'), url('../fonts/icomoon.woff?2b2jiv') format('woff'), url('../fonts/icomoon.svg?2b2jiv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: #5555;
+}
+li {
+  list-style: none;
+}
+body {
+  background-color: rgba(207, 210, 205, 0.5);
+}
+.nav {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.mianbox1 {
+  position: relative;
+  margin: 10px auto;
+  width: 85%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mianbox1 .title {
+  margin: 5px auto;
+  position: relative;
+  top: 1rem;
+  text-align: center;
+  line-height: 0.725rem;
+}
+.mianbox1 .title h1 {
+  font-size: 30px;
+  color: black;
+}
+.mianbox1 .lylist {
+  position: relative;
+  width: 100%;
+  height: 6.75rem;
+  border-radius: 0px;
+  margin-top: 2.1rem;
+}
+.mianbox1 .lylist div {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  margin: 10px 10px;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 30px;
+}
+.mianbox1 .lylist .move_div {
+  z-index: 30;
+}
+.mianbox1 .gdbj {
+  position: absolute;
+  top: 0.925rem;
+  margin-top: 2rem;
+  width: 100%;
+  height: 6.75rem;
+}
+.mianbox1 .gdbj ul {
+  height: 100%;
+  position: relative;
+  width: 67344px;
+  left: 0px;
+}
+.mianbox1 .gdbj ul li {
+  float: left;
+  position: relative;
+}
+.mianbox1 .gdbj ul li img {
+  float: left;
+  height: 6.75rem;
+  border-radius: 0.0625rem;
+}
+.div_text {
+  margin: 0px auto;
+  position: relative;
+  top: 15px;
+  width: 9.625rem;
+  height: 100%;
+  text-align: center;
+}
+.div_text textarea {
+  outline: none;
+  width: 85%;
+  height: 1.3125rem;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin: 10px auto;
+  margin-bottom: 0.575rem;
+  font-size: 0.35rem;
+  font-family: Courier, monospace;
+  color: red;
+}
+.div_text button {
+  width: 2.6rem;
+  height: 0.65rem;
+  background-color: whitesmoke;
+  outline: none;
+  text-align: center;
+  margin-top: -4px;
+  margin-bottom: 15px;
+  line-height: 0.65rem;
+  font-size: 0.45rem;
+  border: 1px solid #5555;
+  cursor: pointer;
+  border-radius: 0.125rem;
+}
+.mianbox2 {
+  margin: 10px auto;
+  margin-top: 2rem;
+  width: 85%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mianbox2 .newstitle {
+  margin: 5px auto;
+  text-align: center;
+  line-height: 50px;
+}
+.mianbox2 .newstitle h1 {
+  font-size: 30px;
+  color: black;
+}
+.mianbox2 .newsdiv {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.mianbox2 .newsdiv .newsdecr {
+  margin: 0px auto;
+  text-align: center;
+  line-height: 0.7rem;
+  height: 0.7rem;
+}
+.mianbox2 .newsdiv ul {
+  margin-top: -0.1rem;
+}
+.mianbox2 .newsdiv ul li {
+  margin: 10px auto;
+  position: relative;
+  height: 1.25rem;
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+}
+.mianbox2 .newsdiv ul li span {
+  position: absolute;
+  left: -0.3rem;
+  top: 0px;
+  width: 0.293333rem;
+  height: 0.293333rem;
+  display: inline-block;
+  background-image: url(../image/system/yx.png);
+  background-repeat: no-repeat;
+  background-position: -3px -3px;
+}
+.mianbox2 .newsdiv ul li span::before {
+  display: block;
+  content: "";
+  position: relative;
+  top: 0.32rem;
+  left: 0.13rem;
+  width: 2px;
+  border-radius: 0.025rem;
+  height: 1.25rem;
+  background-color: #ededed;
+}
+.mianbox2 .newsdiv ul li .time {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-left: 0.125rem;
+  font-size: 0.3rem;
+  color: #a1a5ac;
+}
+.mianbox2 .newsdiv ul li .title {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 0.85rem;
+  overflow: hidden;
+  background-color: #f7f8fb;
+  border-radius: 0.1rem;
+}
+.mianbox2 .newsdiv ul li .title a p {
+  padding-top: 0.0625rem;
+  text-align: left;
+  font-size: 0.27rem;
+  padding-left: 0.125rem;
+  color: #212223;
+}
+.mianbox2 .newsbox1 {
+  height: 100%;
+}
+.mianbox2 .newsbox1 .seemore {
+  position: relative;
+  bottom: 0.125rem;
+  height: 0.65rem;
+  width: 100%;
+  color: #212223;
+  margin: 0px auto;
+  text-align: center;
+  cursor: pointer;
+  line-height: 0.65rem;
+  margin-top: 0.325rem;
+  margin-bottom: 0.325rem;
+}
+.mianbox2 .newsbox1 .seemore::after {
+  position: absolute;
+  left: 60%;
+  content: "\e900";
+  font-family: 'icomoon';
+  font-size: 0.475rem;
+}
+.mianbox2 .newsbox1 div {
+  flex: 2;
+  position: relative;
+}
+.mianbox2 .newsbox2 {
+  height: 300px;
+}
+.mianbox2 .newsbox2 div {
+  flex: 2;
+}
+.mianbox2 .newsbox2 .new1 {
+  background-color: #faf9f9;
+}
+.mianbox2 .newsbox2 .new2 {
+  background-color: red;
+}

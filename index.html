@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸得有你 山河无恙</title>
+    <script type="text/javascript" src="js/need/echarts.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="js/need/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/need/flexible.js"></script>
+    <script type="text/javascript" src="js/data/index.js"></script>
+    <script src="js/data/data.js"></script>
+    <script src="./js/data/verifycookieqt.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>疫情感染捐款数据展示</h1>
+        <div class="showTime">当前时间：2020年3月17-0时54分14秒 </div>
+
+        <ul>
+            <li>
+                <span class="top_border head_donate"><a target="_blank" href="./donate.html">捐赠</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a target="_blank" href="message.html">留言</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a target="_blank" href="./donateshow.html">统计</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a target="_blank" href="./query.html">查询</a></span>
+            </li>
+            <li>
+                <span class="top_border head_donate"><a target="_blank" href="./heroshow.html">抗疫故事</a></span>
+            </li>
+        </ul>
+        
+        
+        
+        
+    </header>
+    <section class="mainbox">
+        <div class="column">
+            <!-- 全国数据展示 -->
+            <div class="china_title bar">
+                <ul>
+                    <li class="text_decr_left">
+                        <span>总捐款金额</span>
+                        <p class="totalMoney"></p>
+                    </li>
+                    <li class="text_decr_left">
+                        <span>总捐款人数</span>
+                        <p class="totalPeople"></p>
+                    </li>
+                  </ul>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel bar">
+                <h2>捐款物资展示</h2>
+                <div class="chart t3"></div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <div class="column">
+            <!-- 中间列 上部分展示 -->
+            <div class="map">
+                <div class="map1"></div>
+                <div class="map2"></div>
+                <div class="map3"></div>
+                <div class="chart t7" ></div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="china_title bar">
+                <ul>
+                    <li class="text_decr_right">
+                        <span>总累计确诊</span>
+                        <p class="confirmed"></p>
+                    </li>
+                    <li class="text_decr_right">
+                        <span>总治愈人数</span>
+                        <p class="cured"></p>
+                    </li>
+                    </ul>
+                <div class="panel-footer"></div>
+            </div>
+            <div class="panel bar">
+                <h2>国内疫情数据</h2>
+                <div class="chart t4">
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
